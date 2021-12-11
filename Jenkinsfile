@@ -11,6 +11,14 @@ pipeline {
       
       }
   }
+    
+     stage("Test") {
+      steps {
+      
+        echo "testing app .. ${BRANCH_NAME}"
+      
+      }
+  }
   
   stage("Deploy") {
       steps {
