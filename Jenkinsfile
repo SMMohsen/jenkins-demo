@@ -8,7 +8,8 @@ pipeline {
       steps {
       
       echo 'building app ..'
-      sh 'mnv clean install'
+      sh 'docker build -t test-image'
+      sh 'docker run -p 8085:8080 test-image'
       
       }
   }
