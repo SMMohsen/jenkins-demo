@@ -8,6 +8,7 @@ pipeline {
       steps {
       
       echo 'building app ..'
+      sh 'mnv clean install'
       
       }
   }
