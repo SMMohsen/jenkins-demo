@@ -8,7 +8,7 @@ pipeline {
       steps {
       
       echo 'building app ..'
-     sh "./mvnw clean install"
+     sh "sudo ./mvnw clean install"
       
       }
   }
